@@ -72,7 +72,7 @@ export const Draggable = () => {
       alt="mountains illustration"
       className={file ? "dropImg" : ""}
       />
-      {file && <i className="fas fa-times-circle" onClick={()=>setFile(false)}></i>}
+      {file && <i className="fas fa-times-circle exit" onClick={()=>setFile(false)}></i>}
     {!file && <p>Drag & Drop your image here</p>}
 
     </div>

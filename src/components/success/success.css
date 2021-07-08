@@ -73,7 +73,7 @@ section > *:last-child, section > * > *:last-child {
   width: 100%;
 }
 
-.success .fas {
+.success .check {
   color: #219653;
   font-size: 2rem;
 }

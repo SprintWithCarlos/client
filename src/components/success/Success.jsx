@@ -9,7 +9,7 @@ export const Success = () => {
     return (
         <div className="success">
              <section className="top">
-             <i className="fas fa-check-circle"></i>
+             <i className="fas fa-check-circle check"></i>
                <h1>Uploaded Successfully!</h1>
            </section>
            <section className="middle">
