@@ -2,16 +2,16 @@ import './card.css'
 import { Uploader } from '../uploader/Uploader'
 import { ProgressBar } from '../progressBar/ProgressBar'
 import {Success} from '../success/Success'
-import { useState } from 'react'
+import { useContext } from 'react'
+import { Context } from '../../Context'
 export const Card = () => {
-    const [isLoading, setIsLoading] = useState(false)
-    const [success, setSuccess] = useState(false)
-    return (
+  const { isUploading, success, error} = useContext(Context)  
+  return (
        <div className="card">
             {/* <ProgressBar/>  */}
-           {(!isLoading && !success )&& <Uploader/>}
-           {isLoading && <ProgressBar/> }
-           {success && <Success/>}
+           {(!isUploading && !success )&& <Uploader />}
+           {isUploading && <ProgressBar /> }
+           {success && <Success />}
       </div> 
     )
 }

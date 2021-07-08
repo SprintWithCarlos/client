@@ -1,7 +1,11 @@
 import './success.css'
 import Image from './image.jpeg'
+import { useContext } from 'react'
+import { Context } from '../../Context'
 
 export const Success = () => {
+    const {url, dispatch} =  useContext(Context)
+    
     return (
         <div className="success">
              <section className="top">
@@ -10,13 +14,15 @@ export const Success = () => {
            </section>
            <section className="middle">
                <div className="dropContainer">
-                    <img src={Image} alt="mountains illustration" />
+                   <a href={url}>
+                    <img src={url} alt="uploaded" />
+                   </a>
                </div>
            </section>
            <section className="bottom">
            <div className="linkContainer">
-               <p>https://images.yourdomain.com/photo-1496950866446-325...</p>
-           <button className="btn">
+               <p>{url}</p>
+           <button className="btn" onClick={()=>dispatch({type: "RESTART" })}>
                Copy Link
             </button>
            </div>

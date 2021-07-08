@@ -1,5 +1,6 @@
 import './uploader.css'
-import CardImage from './image.svg'
+
+import { Draggable } from '../draggable/Draggable'
 export const Uploader = () => {
     return (
        <section className="uploader">
@@ -8,22 +9,9 @@ export const Uploader = () => {
                <p>File should be Jpeg, Png,...</p>
            </section>
            <section className="middle">
-               <div className="dropContainer">
-                    <img src={CardImage} alt="mountains illustration" />
-                    <p >
-                    Drag & Drop your image here
-                    </p>
-               </div>
-               
+               <Draggable/>
            </section>
-           <section className="bottom">
-           <p >
-                   Or
-               </p>
-            <button className="btn">
-                Choose a file
-            </button>
-           </section>
+           
        </section> 
     )
 }

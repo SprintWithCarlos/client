@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans:wght@700&family=Poppins:wght@500&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 0 0.625rem;
+}
+
+@media only screen and (min-width: 442px) {
+  body {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.dropWrapper {
+  width: 100%;
+}
+
+.dropContainer {
+  width: 100%;
+  background-color: #FAFAFB;
+  border-radius: 0.75rem;
+  height: 13.75rem;
+  max-width: 338px;
+  position: relative;
+}
+
+.dropImg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 338px;
+  border-radius: 5px;
+  margin-top: 0.625rem;
+  max-height: 230px;
+}
+
+.bottom .btn {
+  border-radius: 0.5rem;
+  background-color: #2F80ED;
+  color: white;
+  padding: 0.625rem 1.25rem;
+}
+
+.active {
+  opacity: 0.7;
+}
+
+.fas {
+  position: absolute;
+  top: -1rem;
+  right: -0.75rem;
+  cursor: pointer;
+  color: red;
+  font-size: 1.25rem;
+}
+
+label {
+  cursor: pointer;
+}
+/*# sourceMappingURL=dragabble.css.map */
