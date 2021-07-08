@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans:wght@700&family=Poppins:wght@500&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+@media only screen and (min-width: 442px) {
+  body {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+section, section > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section > *, section > * > * {
+  margin-bottom: 1rem;
+}
+
+section > *:last-child, section > * > *:last-child {
+  margin-bottom: 0;
+}
+
+.uploader {
+  max-width: 402px;
+  text-align: center;
+  font-family: Poppins;
+  width: 100%;
+}
+
+.uploader p {
+  color: #BDBDBD;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
+.uploader .top h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+}
+
+.uploader .top p {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: #828282;
+}
+
+.uploader .middle {
+  width: 100%;
+}
+
+.uploader .middle .dropContainer {
+  width: 100%;
+  background-color: #FAFAFB;
+  border: 1px dashed #97BEF4;
+  border-radius: 0.75rem;
+  height: 13.75rem;
+}
+
+.uploader .bottom .btn {
+  border-radius: 0.5rem;
+  background-color: #2F80ED;
+  color: white;
+  padding: 0.625rem 1.25rem;
+}
+/*# sourceMappingURL=uploader.css.map */

@@ -1,0 +1,77 @@
+@import ../../index
+section, section > *
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-evenly
+  > *
+    margin-bottom: 1rem
+    &:last-child
+      margin-bottom: 0
+
+.success
+  max-width: 402px
+  text-align: center
+  font-family: Poppins
+  width: 100%
+  .fas
+    color: $Green1
+    font-size: 2rem
+
+  p
+    color: $Gray4
+    font-size: 0.75rem
+    line-height: 1.125rem
+
+  .top
+    h1
+      font-style: normal
+      font-weight: 500
+      font-size: 1.125rem
+      line-height: 1.6875rem
+      letter-spacing: -0.035em
+      color: $Gray2
+      margin-bottom: 20px
+    p
+      font-weight: 500
+      font-size: 10px
+      line-height: 15px
+      color: $Gray3
+  .middle
+    width: 100%
+    margin-bottom: 1.25rem
+    .dropContainer
+      width: 100%
+      img
+        width: 100%
+        object-fit: cover
+        border-radius: 0.75rem
+        max-height: 230px
+
+  .bottom
+    width: 100%
+    .linkContainer
+      width: 100%
+      display: flex
+      background-color: $background1
+      height: 2.125rem
+      border-radius: 0.5rem
+      border: 1px solid #E0E0E0
+      flex-direction: row !important
+      align-items: center !important
+    p
+      font-size: 0.49rem
+      color: $Gray2
+      margin-bottom: 0
+      padding-left: 0.5rem
+    .btn
+      border-radius: 0.5rem
+      background-color: $Blue1
+      color: white
+      padding: 0.625rem 1.25rem
+      font-size: 0.5rem
+@media only screen and ( max-width: 442px  )
+  .success
+    .bottom
+      p
+        font-size: 0.44rem

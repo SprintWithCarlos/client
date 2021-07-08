@@ -1,0 +1,51 @@
+@import ../../index
+section, section > *
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-evenly
+  > *
+    margin-bottom: 1rem
+    &:last-child
+      margin-bottom: 0
+
+.uploader
+  max-width: 402px
+  text-align: center
+  font-family: Poppins
+  width: 100%
+
+  p
+    color: $Gray4
+    font-size: 0.75rem
+    line-height: 1.125rem
+
+  .top
+    h1
+      font-style: normal
+      font-weight: 500
+      font-size: 1.125rem
+      line-height: 1.6875rem
+      letter-spacing: -0.035em
+      color: $Gray2
+    p
+      font-weight: 500
+      font-size: 10px
+      line-height: 15px
+      color: $Gray3
+  .middle
+    width: 100%
+    .dropContainer
+      width: 100%
+      background-color: $background1
+      border: 1px dashed #97BEF4
+      border-radius: 0.75rem
+      height: 13.75rem
+
+  .bottom
+
+    .btn
+      border-radius: 0.5rem
+      background-color: $Blue1
+      color: white
+      padding: 0.625rem 1.25rem
