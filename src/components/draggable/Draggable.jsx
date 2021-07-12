@@ -4,6 +4,7 @@ import CardImage from "./image.svg";
 import React from "react";
 import { useState, useContext } from "react";
 import {Context} from '../../Context'
+const host = process.env.REACT_APP_SERVER || "localhost:5001"
 export const Draggable = () => {
   const [file, setFile] = useState(false);
   const [active, setActive] = useState(false)
