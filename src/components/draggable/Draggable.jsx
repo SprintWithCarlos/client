@@ -40,6 +40,7 @@ export const Draggable = () => {
     const fileName = Date.now() + "_" + file.name.replace(/\s/g,'')
     data.append("name", fileName)
     data.append("file", file)
+    data.append("type", file.type)
     setData(data)
     dispatch({type: "START_UPLOADING"})
    const host = "api2-1as2.onrender.com"
@@ -79,7 +80,7 @@ export const Draggable = () => {
     </div>
     <section className="bottom">
       {!file ? <p>Or</p> :  <p>Preview</p>}
-      <input style={{"display": "none"}} type="file" id="file" accept=".png, .jpeg,.jpg" onChange={(e)=>setFile(e.target.files[0])} />
+      <input style={{"display": "none"}} type="file" id="file" accept=".png, .jpeg,.jpg, .mov, .mp4" onChange={(e)=>setFile(e.target.files[0])} />
       {!file ?
      <label htmlFor="file" className="btn">
          Choose a file
