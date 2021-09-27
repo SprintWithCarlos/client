@@ -43,7 +43,7 @@ export const Draggable = () => {
     data.append("type", file.type)
     setData(data)
     dispatch({type: "START_UPLOADING"})
-   const host = "api2-1as2.onrender.com"
+   const host = "swc-image-uploader.herokuapp.com"
   // const host = "localhost:5001"
   try {
     const res = await fetch(`https://${host}/upload`, {
